@@ -17,6 +17,9 @@ body{
     margin-left: 10px;
 
 }
+section{
+    margin-bottom: 50px;
+}
 
 /* ==========>
 Navigation style
@@ -30,6 +33,12 @@ Navigation style
     background-color: white;
     padding: 10px 0;
     align-items: center;
+    border-bottom: 2px solid black;   
+    margin-bottom: 15px;
+    
+}
+.navigation-titile{
+    display: flex;
 }
 .nav-title> a{
  font-size: 24px;
@@ -42,11 +51,12 @@ Navigation style
 
 
 .nav-items{
-    display: flex;
+    display: inline-flex;
 }
 .nav-items li{
     list-style: none;
     margin-right: 35px;
+    
 }
 .nav-items li a{
     text-decoration: none;
@@ -58,17 +68,58 @@ Navigation style
 .nav-items li a:hover{
 border-bottom: 2px solid black;
 }
-.search-icon{
-   margin-right: 35px;
-   font-size: 16px;
+
+#search-icon:hover{
+    border-bottom: none;
 }
 .carry-icon{
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 10px;
     cursor: pointer;
+    display: inline;
 }
+/* ====================
+Journey Incluecin Start
+========================*/
+.journy-incluecin-main{
+    display: flex;
+    background-color: white;    
+  justify-content: center;
+   padding: 50px 30px;
+   width: 96%;
+    margin: 0 16px;
+   border-radius: 5px;
+   align-items: center;
 
-
+}
+.journy-inclucin-title, .inclucin-img{
+ width: 45%;
+}
+.inclucin-title{
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.inclusin-para{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.preebook-btn{
+    text-decoration: none;
+    background-color:#E02C6D ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.inclucin-camera{
+width: 75%;
+margin-left:60px;
+margin-top: 30px;
+}
 
 
 
@@ -82,9 +133,77 @@ border-bottom: 2px solid black;
 /* ===============>
 Media Query
 ===================*/
-@media screen and (max-width:992px){
+@media screen and (min-width:998px){
     .nav-bar button i{
         display: none;
     }
+}
+@media screen and (max-width:992px){
+    .navigation{
+        justify-content: space-between;
+    }
+    button.bar-btn {
+        font-size: 22px;
+        outline-style: none;
+        border: none;
+        margin-right: 24px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        margin-left: 10px;
+
+    }
+   
+     .nav-items {
+           display: none;
+            position: absolute;
+            left: 0px;
+            top: 58px;
+            z-index: 9999;
+            background-color: #E02C6D;
+            padding: 12px;
+            border-radius: 5px;
+            width: 400px;
+            height: 600px;
+            
+           
+     }
+    
+     .nav-bar button:hover .nav-items  {
+       display: block;
+    }
+     .nav-items li{
+         margin-bottom: 30px;
+     }
+     .nav-items li a{
+         color: white;
+     }
+     .nav-items li a:hover{
+        border-bottom: 2px solid white;
+     }
+     .carry-icon{
+         margin-left: 0px;
+         margin-right: 30px;
+         font-size: 22px;
+     }
+ 
+    .Influ-title{
+        font-size: 23px;
+        letter-spacing: 0px;
+        margin-top: 5px;
+    }
+    
+    .journy-incluecin-main{
+        display: block;
+        margin-left: 10px;
+    }
+    .journy-inclucin-title, .inclucin-img{
+        width: 100%;                
+     }
+     .inclucin-camera{
+        width: 80%;
+        margin-left:20px;
+     }
     
 }
