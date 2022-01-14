@@ -1,0 +1,90 @@
+
+/* ===========>
+common style
+===============>*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+   background-color: whitesmoke;
+}
+.container{
+    width: 80%;
+    margin-left: 10px;
+
+}
+
+/* ==========>
+Navigation style
+============>*/
+
+.navigation{
+    display: flex;
+    width: 100%;  
+    justify-content: space-around;
+    height: 70px;  
+    background-color: white;
+    padding: 10px 0;
+    align-items: center;
+}
+.nav-title> a{
+ font-size: 24px;
+ text-decoration: none;
+ font-weight: bold;
+ color: black;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+}
+
+
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    list-style: none;
+    margin-right: 35px;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;   
+   
+}
+.nav-items li a:hover{
+border-bottom: 2px solid black;
+}
+.search-icon{
+   margin-right: 35px;
+   font-size: 16px;
+}
+.carry-icon{
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============>
+Media Query
+===================*/
+@media screen and (max-width:992px){
+    .nav-bar button i{
+        display: none;
+    }
+    
+}
