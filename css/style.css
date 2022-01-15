@@ -182,12 +182,15 @@ Blog Part
     box-shadow: -10px 10px 20px silver;
     border-radius: 8px;
     text-align: center;
+    overflow: hidden;
+    
 }
-.blog-gallery:hover{
-border: 1px solid #E02C6D  ;
+.blog-gallery:hover img{
+transform: scale(1.1);
 }
 .blog-gallery img{
     width: 100%;
+    transition: 1s transform ;
 }
 .blog-body{
     text-align: left;
