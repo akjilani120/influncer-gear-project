@@ -241,6 +241,7 @@ social profilesand part
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom:20px;
 }
 .profilesand{
     background-color: rgba(2, 2, 2, 0.507);
@@ -311,6 +312,38 @@ input{
     color: white;
 }
 .submit-btn:hover{
+    background-color: white;
+    color: black;
+}
+/* ============
+Footer part 
+================*/
+.footer-part{
+    background-color: rgb(6, 6, 51);
+    color: white;
+    text-align: center;
+    padding: 35px 0px;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+.footer-part p{
+    margin: 20px 0px;    
+}
+.social-link{
+    color: white;
+    font-size: 18px;
+   width: 50px;
+   margin-right: 10px ;
+   background-color: #AAAA;
+   padding: 8px;
+   border-radius: 50%;
+   transition: 1s  background-color;
+   margin-top: 20px;
+}
+.social-link:hover{
     background-color: white;
     color: black;
 }
@@ -414,7 +447,7 @@ Media Query
     }
     
     .blog-gallery{
-        height: 480px;
+        height: 500px;
         padding: 5px;
     }
     .profilesand-about , .profilesand-form{
@@ -422,5 +455,8 @@ Media Query
     }
     .form-main{
         height: 480px;
+    }
+    .profilesand-title{
+        font-size: 35px;
     }
 }
