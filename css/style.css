@@ -87,7 +87,7 @@ Journey Incluecin Start
     background-color: white;    
   justify-content: center;
    padding: 50px 30px;  
-    margin: 0 16px;
+    margin: 0 30px;
    border-radius: 5px;
    align-items: center;
    margin: 10 20px;
@@ -129,13 +129,14 @@ margin-top: 30px;
 transition: 1s transform ease-in;
 }
 .inclucin-camera:hover{
-    transform: translate(50px);
+    transform: scale(1.5);
 }
 .inclucin-img{
     background-image: url(../image/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 50px;
+    overflow: hidden;
 }
 /* ===========
 logo-Part
@@ -145,18 +146,92 @@ logo-Part
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
-    height: 200px;
+    height: 250px;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 30px;
+    border-radius: 5px;
 }
 .logo-img{
 margin: 0 20px;
 }
+/* ==========
+Blog Part
+=============*/
+.popular-collection-main{
+    background-color: white;
+    margin: 0 30px;
+    border-radius: 5px;
+    padding: 20px 100px;
+}
+.popular-title {
+    font-size: 35px;
+    text-align: center;
+   margin-top: 20px;
+}
+.blogs{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);   
+   grid-gap: 30px;
+   padding-bottom: 50px;
+   
+}
+.blog-gallery{
+    height: 480px;
+    padding: 10px;
+    box-shadow: -10px 10px 20px silver;
+    border-radius: 8px;
+    text-align: center;
+}
+.blog-gallery:hover{
+border: 1px solid #E02C6D  ;
+}
+.blog-gallery img{
+    width: 100%;
+}
+.blog-body{
+    text-align: left;
+}
+.blog-title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.blog-prize{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.start{
+   color: rgb(251, 174, 96);
+   margin-right: 20px;
+   margin-bottom: 10px;
+}
+.blog-about, .blog-footer{
+    opacity: .4;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 10px;
 
+}
+.blog-see-more{
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 30px;
 
+}
+.seemore-btn{    
+    color:#E02C6D ;   
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.seemore-btn:hover{
+    background-color:#E02C6D ;
+    color: white;
+    border-radius: 5px;
 
-
-
+}
 
 
 /* ===============>
@@ -194,8 +269,7 @@ Media Query
             padding: 12px;
             border-radius: 5px;
             width: 400px;
-            height: 600px;
-            
+            height: 600px;          
            
      }
     
@@ -234,5 +308,32 @@ Media Query
         width: 80%;
         margin-left:20px;
      }
+
+     .blogs{
+         grid-template-columns: repeat(2, 1fr);
+     }
+    
+}
+@media screen and (max-width:756px) {
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .blog-gallery{
+        height: 600px;
+    }
+    .blog-see-more{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:576px) {
+    .popular-collection-main{
+        margin: 0 5px;
+    }
+    
+    .blog-gallery{
+        height: 480px;
+        padding: 5px;
+    }
     
 }
