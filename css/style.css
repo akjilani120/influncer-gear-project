@@ -86,11 +86,11 @@ Journey Incluecin Start
     display: flex;
     background-color: white;    
   justify-content: center;
-   padding: 50px 30px;
-   width: 96%;
+   padding: 50px 30px;  
     margin: 0 16px;
    border-radius: 5px;
    align-items: center;
+   margin: 10 20px;
 
 }
 .journy-inclucin-title, .inclucin-img{
@@ -116,6 +116,7 @@ Journey Incluecin Start
     border-radius: 5px;
     text-transform: capitalize;
     transition: 2s background-color;
+   
 }
 .preebook-btn:hover{
     transform: translate(50px);
@@ -134,8 +135,23 @@ transition: 1s transform ease-in;
     background-image: url(../image/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 50px;
 }
-
+/* ===========
+logo-Part
+============*/
+.logo-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    height: 200px;
+    align-items: center;
+    margin: 0 20px;
+}
+.logo-img{
+margin: 0 20px;
+}
 
 
 
