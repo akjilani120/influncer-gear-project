@@ -78,6 +78,7 @@ border-bottom: 2px solid black;
     cursor: pointer;
     display: inline;
 }
+
 /* ====================
 Journey Incluecin Start
 ========================*/
@@ -114,14 +115,26 @@ Journey Incluecin Start
     padding: 5px 10px;
     border-radius: 5px;
     text-transform: capitalize;
+    transition: 2s background-color;
+}
+.preebook-btn:hover{
+    transform: translate(50px);
+    background-color: black;
 }
 .inclucin-camera{
 width: 75%;
 margin-left:60px;
 margin-top: 30px;
+transition: 1s transform ease-in;
 }
-
-
+.inclucin-camera:hover{
+    transform: translate(50px);
+}
+.inclucin-img{
+    background-image: url(../image/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
